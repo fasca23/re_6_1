@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/re_6_1/static/css/main.d73ae1a0.css",
+    "main.js": "/re_6_1/static/js/main.10f8f663.js",
+    "static/js/787.80644e0d.chunk.js": "/re_6_1/static/js/787.80644e0d.chunk.js",
+    "static/media/klipartz.png": "/re_6_1/static/media/klipartz.42e51c0b1616a1b01e91.png",
+    "index.html": "/re_6_1/index.html",
+    "main.d73ae1a0.css.map": "/re_6_1/static/css/main.d73ae1a0.css.map",
+    "main.10f8f663.js.map": "/re_6_1/static/js/main.10f8f663.js.map",
+    "787.80644e0d.chunk.js.map": "/re_6_1/static/js/787.80644e0d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d73ae1a0.css",
+    "static/js/main.10f8f663.js"
+  ]
+}
