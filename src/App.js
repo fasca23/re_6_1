@@ -3,30 +3,34 @@ import Watch from "./components/Watch";
 import React, {useState} from 'react';
 import Input from "./components/Input";
 
+const timezoneUTC = new Date().getTimezoneOffset() / 60
+
+// console.log(timezoneUTC)
+
 function App() {
     const [watches, setWatches] = useState([
         {id: '1',
-        offset: '0',
+        offset: '+3',
         text: 'Москва'},
 
         {id: '2',
-        offset: '4',
+        offset: '+7',
         text: 'Томск'},
 
         {id: '3',
-        offset: '2',
+        offset: '+5',
         text: 'Челябинск'},
 
         {id: '4',
-        offset: '-1',
+        offset: '+2',
         text: 'Калининград'},
 
         {id: '5',
-        offset: '3',
+        offset: '+6',
         text: 'Омск'},
 
         {id: '6',
-        offset: '7',
+        offset: '+10',
         text: 'Владивосток'},
 ])
 
@@ -46,7 +50,7 @@ function App() {
                 {watches.map((watch) => {
                     return (
                         <li>
-                            <Watch key={watch.id} id={watch.id} deleteItem={deleteItem} title={watch.text} timezoneOffset={Number(watch.offset)} />
+                            <Watch key={watch.id} id={watch.id} deleteItem={deleteItem} title={watch.text} timezoneOffset={Number(watch.offset)+timezoneUTC} />
                         </li>
                     )
                 })}
